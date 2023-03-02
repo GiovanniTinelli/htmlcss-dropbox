@@ -372,7 +372,12 @@ DOPO ROW
   display: flex;
   align-self:center ;
 }
-.function div,Span{
+.function div{
+  text-align: start;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.function Span{
   text-align: start;
   padding-left: 50px;
   margin-bottom: 20px;
