@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*utility*/
@@ -39,6 +39,7 @@ ul{
 }
 .fixed-menu ul li:hover{
   text-decoration: underline;
+  border-bottom-style: solid;
 }
 .start-bottom{
   background-color: blue;
@@ -54,42 +55,51 @@ container.jumbotron{
   padding-top: 50px;
   width: 2000px;
   height: 1400px;
-  background-color: rgb(129, 202, 231);
-  position: relative;
-  
 }
 .jumbo{
     background-color: rgb(158, 214, 255);
-    position: relative;
+    position: relatve;
+    height: 550px;
     padding-top: 100px;
 }
-.title-jumbotron{
+
+#title-jumbotron{
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0px 50px;
+  justify-content: flex-start;
+  padding: 0px 130px;
   font-size: 55px;
 }
-.text-jumbotron{
-  background-color: orange;
-  width: 300px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 30px 50px;
-  position: absolute;
-  left: 3px;
-  bottom: 50px;
-}
 
+.text-jumbo{
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px ;
+  margin-left: 130px;
+}
+.test{
+  padding-left: 130px;
+  margin-top: -20px;
+}
 .jumbo img{
-  width: 50%;
-  height: 50%;
-  padding-top: 55px;
-  padding-right: 50px;
-  background-color: brown;
-  
-  
+  width: calc(100% / 2);
+  padding-top: px;
+  padding-right: 80px;
+  padding-bottom: 60pxpx;
+  position: absolute;
+  right: 0;
+  bottom: 23vh;
+}
+.free-test-ROW.first{
+  text-align: left; 
+  margin-left: 0px;
+}
+.arrow{
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 130px;
+  margin-top: 20px;
 }
 /*fine JUMBO*/
 
@@ -100,17 +110,30 @@ container.jumbotron{
 /*MAIN*/
 
 
+/*testo prima colonne */
+
+.choose-plan{
+  background-color: #ffffff;
+  width: 1020px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: 190px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  
+}
 
 #dropbox-plane{
   margin-top: 50px;
-  padding: 0 200px;
+  margin-bottom: 30px;
 }
+
 .option-plan{
   display: flex;
-  padding: 0 200px;
 }
 .option-plan li{
-  padding: 15px;
+  padding: 5px; 
 }
 .option-plan:hover{
   cursor: pointer;
@@ -121,7 +144,11 @@ container.jumbotron{
 
 
 
+
 /* zona 3 colonne */
+
+
+/*  PRIMA colonna */
 
 
 .column-container{
@@ -133,22 +160,10 @@ container.jumbotron{
 }
 
 
-/*testo prima colonne DA FINIRE*/
-
-.choose-plan{
-  background-color: #ffffff;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-
-
 .all-column{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .box-column{
@@ -198,7 +213,31 @@ span:nth-child(2){
 }
 span strong{
   display: block;
+}
 
+/*   FOOOOTER COLUMN    */
+.box-footer{
+  padding: 30px;
+}
+.box-footer hr{
+margin-top: 30px;
+margin-bottom: 30px;
+width: 60px;
+}
+
+nav ul li{
+padding-top: 30px;
+font-size: smaller;
+}
+nav ul li i{
+  color: rgb(27, 27, 255);
+}
+#buy{
+  color: blue;
+}
+#buy:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*
@@ -249,8 +288,6 @@ br{
   padding: 5px 25px;
   margin: 30px 25px;
   border-radius: 5%;
-  display: flex;
-  justify-content: center;
 }
 .free-test-ROW:hover{
   cursor: pointer;
@@ -260,6 +297,87 @@ br{
 /*FINE ROW*/
 /*FINE ROW*/
 /*FINE ROW*/
+
+
+
+/*
+DOPO ROW
+*/
+.AFTER-ROW{
+  background-color: rgb(255, 255, 255);
+  margin-top: 100px;
+  margin-left: 20px;
+  display: flex;
+}
+.AFTER-ROW img{
+  width: 50%;
+  padding-left: 190px;
+}
+.partner-text{
+  background-color: #ffffff;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 190px;
+}
+.partner-text h3{
+  padding-bottom: 30px;
+  font-size: x-large;
+  padding: 0 30px;
+}
+.partner-text p{
+  padding: 30px 30px;
+}
+.partner-text div{
+  margin-left: 30px;
+  border-style: solid;
+  border-color: rgb(181, 181, 181);
+  padding: 10px;
+}
+.partner-text div:hover{
+  color: #0040ff;
+  cursor: pointer;
+}
+.partner-text div:active{
+  background-color: rgb(0, 42, 255);
+  color: white;
+}
+
+
+/*  FUNZIONI   */
+
+.container-functions{
+  background-color: rgb(255, 255, 255);
+  width: 1020px;
+  height: 800px;
+  margin: 65px 205px;
+}
+.wrap-class{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.container-functions h2{
+  font-size: xx-large;
+}
+.function{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.function img{
+  width: 70%;
+  display: flex;
+  align-self:center ;
+}
+.function div,Span{
+  text-align: start;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
 
 
 /*footer*/
